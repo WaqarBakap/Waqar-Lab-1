@@ -1,4 +1,4 @@
-# 3. Function Graph (y = x^2 in 1st quadrant)
+# Function Graph (y = x^2 in 1st quadrant)
 def graph_y_x2(height=9, width=20):
     for y in range(height, -1, -1):
         line = ""

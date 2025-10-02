@@ -1,7 +1,7 @@
 import os
 import time
 
-# 1. FLAG of France (3 vertical stripes: Blue, White, Red)
+# FLAG of France (3 vertical stripes: Blue, White, Red)
 def france_flag(height=9, width=27):
     for _ in range(height):
         print("\x1b[44m" + " " * (width//3) +   # Blue
@@ -9,7 +9,7 @@ def france_flag(height=9, width=27):
               "\x1b[41m" + " " * (width//3) +   # Red
               "\x1b[0m")
 
-# 2. Repeating Pattern (Pattern a: checkerboard style)
+# Repeating Pattern (Pattern a: checkerboard style)
 def pattern_a(rows=9, cols=27):
     for i in range(rows):
         line = ""
@@ -21,7 +21,7 @@ def pattern_a(rows=9, cols=27):
         print(line + "\x1b[0m")
 
 
-# 5. Simple Animation (flag waving simulation)
+# Simple Animation (flag waving simulation)
 def animation():
     for _ in range(5):
         os.system("cls" if os.name == "nt" else "clear")

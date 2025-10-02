@@ -1,6 +1,6 @@
 
-#import sequence.txt
-# 4. Ratio Chart from sequence.txt
+
+# Ratio Chart from sequence.txt
 def ratio_chart(filename="sequence.txt"):
     with open(filename, "r") as f:
         numbers = list(map(float, f.read().split()))
